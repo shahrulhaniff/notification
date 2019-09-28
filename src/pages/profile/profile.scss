@@ -1,0 +1,47 @@
+page-profile {
+    .user-photo ion-avatar {
+        margin: 0 auto;
+        width: 120px;
+        height: 120px;
+      }
+    
+      ion-list {
+        margin-top: 24px;
+        p {
+          font-size: 12px;
+          font-weight: 400;
+          padding-bottom: 4px;
+        };
+        h2 {
+          font-weight: 400;
+          opacity: .5;
+        }
+      }
+
+      
+  .edit{
+    //color: #788cfd;
+    border-radius: 10px;
+    background-color: #56abf1;
+    height: 10%;
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+}
+.bg{
+ 
+  background: url("../assets/imgs/bg.jpg") no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inlist{
+  font-weight: bold;
+  color:#2e3192;
+}
+
+.card3{
+  border-radius: 7px;
+  background-color: transparent;
+}

@@ -1,0 +1,64 @@
+<!--<ion-header>
+  <ion-navbar color="theme">
+
+      <ion-buttons class="pads">
+          <button ion-button icon-only color="light" (click)="navtohome()">
+            <ion-icon name="home"></ion-icon>
+          </button>
+        </ion-buttons>
+
+    <ion-title text-center>
+      e-Tasmik 
+    </ion-title>
+    <ion-buttons end >
+      <button ion-button (click)="presentPopover($event)"><ion-icon name="more" style="zoom:1.7;"></ion-icon></button>
+  </ion-buttons> 
+  </ion-navbar>
+</ion-header>
+-->
+<ion-header>
+    <ion-navbar color="theme">
+      <ion-title>
+      e-Tasmik
+    </ion-title>
+      <button ion-button menuToggle>
+          <ion-icon name="menu" color="light"></ion-icon>
+        </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg" padding>
+  <!-- <ion-img width="100%" height=135px src="assets/imgs/profile.png" (click)="toProfile()"></ion-img>
+   <br>
+   <ion-img width="100%" height=135px src="assets/imgs/faq.png" (click)="toFAQ()"></ion-img>
+   <br>
+   <ion-img width="100%" height=135px src="assets/imgs/baby.png" (click)="toBabydata()"></ion-img>
+   <br>
+   <ion-img width="100%" height=135px src="assets/imgs/forum.png" (click)="toForum()"></ion-img>
+-->
+
+<ion-grid style="height: 100%">
+  <ion-row justify-content-center align-items-center style="height: 100%">
+    <div class="pins">
+
+        <ion-card class="pin">
+          <img src="../assets/imgs/profile.png" (click)="toProfile()"/>
+        </ion-card >
+
+        <ion-card class="pin">
+          <img src="../assets/imgs/creategroup.png" (click)="create()"/>
+        </ion-card >
+        
+        <ion-card class="pin">
+            <img src="../assets/imgs/mygroup.png" (click)="toListGroup()"/>
+          </ion-card >
+
+        <ion-card class="pin">
+          <img src="../assets/imgs/joingroup.png" (click)="toListGroup2()"/>
+        </ion-card >
+    </div>
+  </ion-row>
+</ion-grid>
+   
+
+</ion-content>

@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar color="theme">
+    <ion-title>
+      My Profile
+    </ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" color="light"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg">
+    <div padding *ngFor="let profile of profiles">
+      <ion-chip color="theme">
+        <ion-avatar item-start>
+        </ion-avatar>
+        <ion-label style="font-weight: bold" class="color">
+          Profile
+        </ion-label>
+      </ion-chip>
+      <div>
+        <ion-row>
+          <ion-col col-4>
+            <ion-card class="card3">
+                <img src="assets/imgs/3.png" />        
+            </ion-card>
+  
+          </ion-col>
+          <ion-col align-center padding>
+            <button ion-button (click)="editProfile({ record: profile })" full>Edit</button>
+            <button ion-button (click)="changePass({ record: profile })" full color="danger" text-wrap>Change Password</button>
+          </ion-col>
+  
+        </ion-row>
+        <ion-card class="card3" >
+          <ion-list>
+            <ion-item>
+              
+              <ion-label>
+                <p class="inlist">Nama Penuh</p>
+                <h2>{{profile.nama}}</h2>
+              </ion-label>
+            </ion-item>
+  
+            <ion-item>
+             
+              <ion-label>
+                <p>No. Telefon</p>
+                <h2>{{profile.no_telefon}}</h2>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-card>
+      </div>
+      
+   Push Noti: {{profile.nama}}
+    </div> 
+    <ion-footer>
+            <button ion-button block (click)="navtohome()" color="theme">Back to Home</button>
+       </ion-footer>
+
+       <button ion-button block (click)="cekpermission()" color="theme">cekpermission</button>
+       <button ion-button block (click)="wakchanel()" color="theme">wakchanel</button>
+       <button ion-button block (click)="delchanel()" color="theme">delchanel</button>
+       <button ion-button block (click)="lischanel()" color="theme">lischanel</button>
+       <button ion-button block (click)="initpush()" color="theme">initpush</button>
+  </ion-content>

@@ -1,0 +1,34 @@
+0) ionic cordova plugin rm cordova-plugin-console
+//ni kalau remove kena add balik kut, tp ada try tak buat jadi je, sebab tu step 0
+
+
+
+UPDATE VERSION DAH???
+1) ionic cordova build --release android
+//pastu paste apk realese kat luar(dekat key yg kena jaga)
+
+2) keytool -genkey -v -keystore etasmik-release-key.keystore -alias releaseNewKey -keyalg RSA -keysize 2048 -validity 10000
+
+3) jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore etasmik-release-key.keystore app-release-unsigned.apk releaseNewKey
+
+4) C:/Users/shahrul/AppData/Local/Android/sdk/build-tools/26.0.2/zipalign -v 4 app-release-unsigned.apk etasmik.apk
+
+
+
+
+
+
+*untuk update, ulang step 1,3,4
+PERHATIAN! sEBELUM Update, update version dulu!! 
+
+pass: etasmik123
+
+
+
+__________________________________________________________________________________________________________________________________________
+full guide how to publish:
+https://ionicframework.com/docs/v1/guide/publishing.html
+__________________________________________________________________________________________________________________________________________
+how to update:
+https://customersupport.doubledutch.me/hc/en-us/articles/360001395033-Android-How-to-Update-an-App-in-the-Google-Play-Developer-Console
+__________________________________________________________________________________________________________________________________________

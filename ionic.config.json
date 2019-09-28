@@ -1,0 +1,7 @@
+{
+  "name": "ikhatam",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

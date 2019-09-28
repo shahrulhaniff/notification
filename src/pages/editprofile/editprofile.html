@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar color="theme">
+    <ion-title>
+      Edit Profile
+    </ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" color="light"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg">
+    <div padding>
+      <ion-chip color="theme">
+        <ion-avatar item-start>
+        </ion-avatar>
+        <ion-label style="font-weight: bold" class="color">
+          Edit Profile
+        </ion-label>
+      </ion-chip>
+      </div>
+
+      <ion-card class="card3">
+          <div>
+            <ion-item color="primary">
+              Profile
+            </ion-item>
+            <ion-item>
+              <ion-label floating>
+                <h4 color="primary">Name:</h4>
+              </ion-label>
+              <ion-input required type="text" [(ngModel)]="name" name="name" value={{name}} clearInput></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label floating>
+                <h4 color="primary">Phone Number:</h4>
+              </ion-label>
+              <ion-input required type="text" [(ngModel)]="telnum" name="telnum" value={{telnum}} clearInput></ion-input>
+            </ion-item>
+          </div>
+        </ion-card>
+
+      
+        <ion-footer>
+          <ion-toolbar >
+            <button ion-button block (click)="submit()">Update Profile</button>
+        </ion-toolbar>
+          </ion-footer>
+
+</ion-content>

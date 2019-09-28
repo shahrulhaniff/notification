@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1012486531089",
+    "firebase_url": "https://damante-7ba7a.firebaseio.com",
+    "project_id": "damante-7ba7a",
+    "storage_bucket": "damante-7ba7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012486531089:android:f95d518acb8b760c6f69b0",
+        "android_client_info": {
+          "package_name": "io.damante.prism"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012486531089-igp66bvurdk5dtap663rt3jqeep64su6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA04EYfdj3A4cTFo_PycZW_3H5hCrEA3_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012486531089-igp66bvurdk5dtap663rt3jqeep64su6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

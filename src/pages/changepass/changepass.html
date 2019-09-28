@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar color="theme">
+    <ion-title>
+      Change Password
+    </ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" color="light"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg">
+    <div padding >
+      <ion-chip color="theme">
+        <ion-avatar item-start>
+        </ion-avatar>
+        <ion-label style="font-weight: bold" class="color">
+          Change Password
+        </ion-label>
+      </ion-chip>
+      </div>
+      <ion-card class="card3">
+      <div>
+        <ion-item color="primary">
+          Change New Password
+        </ion-item>
+        <ion-item>
+          <ion-label floating>
+            <h4 color="theme">Current Password:</h4>
+          </ion-label>
+          <ion-input required type="password" [(ngModel)]="currentpass" name="currentpass" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>
+            <h4 color="primary">New Password:</h4>
+          </ion-label>
+          <ion-input required type="password" [(ngModel)]="newpass" name="newpass" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>
+            <h4 color="primary">Confirm New Password:</h4>
+          </ion-label>
+          <ion-input required type="password" [(ngModel)]="ppass" name="ppass" ></ion-input>
+        </ion-item>
+        
+      
+      </div>
+    </ion-card>
+    <ion-footer>
+        <ion-toolbar >
+            <button ion-button block (click)="submit()">Change Password</button>
+        </ion-toolbar>
+      </ion-footer>
+</ion-content>
