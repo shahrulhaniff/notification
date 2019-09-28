@@ -7,8 +7,6 @@ import { Storage } from '@ionic/storage';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { LogoutPage } from '../pages/logout/logout';
-import { ListgroupPage } from '../pages/listgroup/listgroup';
-import { Listgroup2Page } from '../pages/listgroup2/listgroup2';
 import { ProfilePage } from '../pages/profile/profile';
 
 import { Push, PushObject, PushOptions } from '@ionic-native/push';
@@ -40,8 +38,6 @@ export class MyApp {
       this.pages = [
         { title: 'Home', component: HomePage , Icon :'home'},
         { title: 'My Profile', component: ProfilePage , Icon :'person'},
-        { title: 'My Group', component: ListgroupPage , Icon :'people'},
-        { title: 'Join Group', component: Listgroup2Page , Icon :'md-paper-plane'},
         { title: 'Log Out', component: LogoutPage, Icon :'log-out' }
       ];
       this.storage.get('user').then((user) => {
