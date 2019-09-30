@@ -88,4 +88,5 @@
         <variable name="FCM_VERSION" value="11.6.2" />
     </plugin>
     <plugin name="cordova-plugin-fcm" spec="^2.1.2" />
+    <engine name="android" spec="6.4.0" />
 </widget>

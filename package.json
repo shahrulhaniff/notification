@@ -28,7 +28,7 @@
     "@ionic/pro": "2.0.4",
     "@ionic/storage": "2.2.0",
     "blueimp-md5": "^2.10.0",
-    "cordova-android": "^6.4.0",
+    "cordova-android": "6.4.0",
     "cordova-plugin-device": "^2.0.3",
     "cordova-plugin-fcm": "^2.1.2",
     "cordova-plugin-fcm-with-dependecy-updated": "^3.2.0",
@@ -41,7 +41,7 @@
     "ionic-angular": "3.9.3",
     "ionicons": "3.0.0",
     "phonegap-plugin-multidex": "^1.0.0",
-    "phonegap-plugin-push": "^2.2.3",
+    "phonegap-plugin-push": "^2.3.0",
     "rxjs": "5.5.11",
     "sw-toolbox": "3.6.0",
     "ts-md5": "^1.2.4",
@@ -69,6 +69,8 @@
       },
       "cordova-plugin-fcm": {}
     },
-    "platforms": []
+    "platforms": [
+      "android"
+    ]
   }
 }
